@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html{
+            height: 100%;
+            display: grid;
+            align-content: center;
+        }
+        body{
+            background-color: #01e37e;
+            display:grid;
+            justify-content: center;
+
+        }
+
+        .area-blanca{
+            width: 500px;
+            height: 500px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .area-manzana{
+            width: 250px;
+            height: 400px;
+            background-color: #ade72b;
+            position: absolute;
+            left: 25%;
+            top:15%;
+            border-radius: 10px;
+            position:absolute;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.568);
+        }
+
+        .manzana{
+            position:relative;
+            left:-30%;
+            width: 300px;
+        }
+
+        .icon{
+            filter: invert(1);
+            width: 30px;
+        }
+
+        .iconos{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            padding-left:10px;
+            padding-top:10px;
+        }
+
+        .icono2{
+            justify-self: end;
+            padding-right: 10px;
+        }
+
+        .todas-manzanas{
+            width: 250px;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            padding-top:5px;
+        }
+
+        .manzanita{
+            height: 40px;
+            border:1px solid black;
+        }
+
+        .informacion{
+            position: relative;
+            right: -110%;
+            bottom:100%;
+
+        }
+
+        .titulo{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight:bolder;
+            margin-bottom: 0px;
+        }
+
+        .codigo{
+            font-size: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 0px;
+        }
+
+        .precio{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 60px;
+            color:red;
+            margin-bottom: 20px;
+            margin-top:30px;
+        }
+
+        .manzanas2{
+            width: 30px;
+            display:inline ;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .manzanita2{
+            width: 40px;
+        }
+
+        .inicial{
+            border: 1px solid rgb(39, 35, 35);
+        }
+
+        .codigo2{
+            padding-top:30px;
+        }
+
+        .beneficio{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            margin-top:5px;
+            margin-bottom:5px;
+        }
+
+        button{
+            width: 200px;
+            background-color: rgb(247, 41, 41);
+            border:none;
+            color:white;
+            padding:10px 30px;
+            margin-top:10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="area-blanca">
+        <div>
+
+        </div>
+    </div>
+
+    <div class="area-manzana">
+        <div class="iconos">
+            <img class="icon" src="images/compartir.png">
+            <img class="icon icono2" src="images/corazon.png">
+        </div>
+
+        <img  class="manzana" src="images/imagen.png">
+
+        <div class="todas-manzanas">
+            <img class="manzanita" src="images/1.jpg">
+            <img class="manzanita" src="images/2.jpg">
+            <img class="manzanita" src="images/3.jpg">
+            <img  class="manzanita" src="images/4.jpg">
+        </div>
+
+        <div class="informacion">
+            <p class="titulo">Deliciosas manzanas</p>
+            <p class="codigo">COD:4555</p>
+            <p class="precio">$7.93</p>
+            <p class="codigo">SELECCIONA UN COLOR</p>
+            <div class="manzanas2">
+                <img class="manzanita2 inicial" src="images/primera.jpg">
+                <img class="manzanita2" src="images/segunda.jpg">
+                <img  class="manzanita2" src="images/tercera.jpg">
+                <img  class="manzanita2" src="images/cuarta.jpg">
+            </div>
+            <p class="codigo codigo2">BENEFICIOS</p>
+            <p class="beneficio">-Las manzanas son nutritivas</p>
+            <p class="beneficio">-Ayuda a prevenir la diabetes</p>
+            <p class="beneficio">-Gran fuente de energía</p>
+            <button>COMPRAR</button>
+        </div>
+    
+    </div>
+
+    
+
+    
+</body>
+</html>
